@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function calcularEdad(int_edad) {
+            if (int_edad >= 18) {
+                console.log('Segun la edad ingresada, es mayor de edad');
+            } else {
+                console.log('Segun la edad ingresada, es menor de edad');
+            }
+        }
+
+        function Tabla5() {
+            let val = 0;
+            for (let i = 1; i <= 10; i++) {
+                val = 5 * i;
+                console.log(val);
+            }
+        }
+        function calcularCuadradoNumero(base) {
+            for (let i = 1; i <= base; i++) {
+                let square = i * i;
+                console.log(`${i}² = ${square}`);
+            }
+        }
+
+        function doble(base) {
+            for (let i = 1; i <= base; i++) {
+                let dobleNum = i * 2;
+                console.log(`${i} - ${dobleNum}`);
+            }
+        }
+        function Imprimmir() {
+            for (let i = 1; i <= 10; i++) {
+                console.log(`Número: ${i}`);
+            }
+        }
+        function Suma10numeros() {
+            let suma = 0;
+            for (let i = 1; i <= 10; i++) {
+                suma += i;
+                console.log(`Suma Parcial es: ${suma}`);
+            }
+            console.log(`La suma de los primeros 10 números enteros es: ${suma}`);
+        }
+
+        function Imprimeasteriscos() {
+            let asteriscos = '';
+            for (let i = 1; i <= 10; i++) {
+                asteriscos += '*';
+            }
+            console.log(asteriscos);
+        }
+
+        function ImprimeArray() {
+            const ArrayNum = [1, 2, 3, 4, 5, 6, 7, 8, 9, 66];
+            for (let i = 0; i <= ArrayNum.length; i++) {
+                console.log(ArrayNum[i]);
+            }
+
+        }
+
+        function ImprimeSumaArray() {
+            const ArrayNum = [1, 2, 3, 4, 5, 6, 7, 8, 9, 66];
+            let suma = 0;
+            for (let i = 0; i < ArrayNum.length; i++) {
+                suma = suma + ArrayNum[i];
+
+            }
+            console.log(`La suma total de los elementos en el array es: ${suma}`);
+        }
+
+        function MayorEnArray() {
+            const ArrayNum = [1, 2, 3, 4, 5, 6, 7, 8, 9, 66];
+            let Mayor = ArrayNum[0];
+            for (let i = 0; i < ArrayNum.length; i++) {
+                if (ArrayNum[i] > Mayor) {
+                    Mayor = ArrayNum[i];
+                }
+
+            }
+            console.log("El número mayor en el array de entrada es:", Mayor);
+        }
+
+        function ContadorMayor10() {
+            const ArrayNumeros = [5, 12, 8, 15, 3, 22, 7, 19];
+            let cont = 0;
+
+            for (let i = 0; i < ArrayNumeros.length; i++) {
+                if (ArrayNumeros[i] > 10) {
+                    cont++;
+                }
+            }
+            console.log("Números mayores que 10 en el array de entrada son:", cont);
+        }
+
+        function Multiplo3() {
+            for (let i = 1; i <= 100; i++) {
+                if (i % 3 === 0) {
+                    console.log(i);
+                }
+            }
+        }
+        function ArrayDeKbeza() {
+            const ArrayNum = [1, 2, 3, 4, 5];
+            for (let i = ArrayNum.length - 1; i >= 0; i--) {
+                console.log(ArrayNum[i]);
+            }
+        }
+
+        function CalculoFibonacci() {
+            let a = 1;
+            let b = 2;
+
+            console.log(a);
+            console.log(b);
+
+            for (let i = 2; i < 10; i++) {
+                let c = a + b;
+                console.log(c);
+                a = b;
+                b = c;
+            }
+        }
+
+        function ImprimePalabra() {
+            let palabra = "Watacatapitusberry";
+
+            for (let i = 0; i < palabra.length; i++) {
+                console.log(palabra[i]);
+            }
+        }
+
+        function ConvertirAMayuscula() {
+            let palabra = "watacatapitusberry";
+
+            for (let i = 0; i < palabra.length; i++) {
+                console.log(palabra[i].toUpperCase());
+            }
+        }
+
+        function crearPiramide(filas) {
+            for (let i = 1; i <= filas; i++) {
+                let linea = "";
+                for (let j = 1; j <= i; j++) {
+                    linea += "*";
+                }
+                console.log(linea);
+            }
+        }
+
+        function ImprimirEncontrarNumero(array, numeroBuscado) {
+            for (let i = 0; i < array.length; i++) {
+                if (array[i] === numeroBuscado) {
+                    console.log("Encontrado");
+                    return;
+                }
+            }
+            console.log("No encontrado");
+        }
+
+
+        //const ArrayIn = [1, 2, 3, 4, 5];
+        //const NumeroABuscar = 9;
+        //ImprimirEncontrarNumero(ArrayIn, NumeroABuscar);
+
+
+        function PosicionesArray() {
+            const ArrayNumeros = [5, 12, 8, 15, 3, 22, 7, 19];
+            for (let i = 1; i < ArrayNumeros.length; i += 2) {
+                console.log(ArrayNumeros[i]);
+            }
+        }
+
+
+        function calcularPromedio(numeros) {
+            let suma = 0;
+            for (let i = 0; i < numeros.length; i++) {
+                suma += numeros[i];
+            }
+            const promedio = suma / numeros.length;
+            return promedio;
+        }
+
+        function contarStrings(array) {
+            let contador = 0;
+            for (let i = 0; i < array.length; i++) {
+                if (typeof array[i] === 'string') {
+                    contador++;
+                }
+            }
+            return contador;
+        }
+
+        //const Array = [1, 'Encontrado', 3.14, 'No encontrado', true];
+        //const cantidadStrings = contarStrings(Array);
+        //console.log("Se encontraron: ", cantidadStrings, "cadenas en el Array.");
+
+        function ConcatenarElementosArray(array) {
+            let cadena = "";
+            for (let i = 0; i < array.length; i++) {
+                cadena += array[i];
+                if (i < array.length - 1) {
+                    cadena += ", ";
+                }
+            }
+            return cadena;
+        }
+
+
+        // const Array2 = ["Uno", "Siete", "Gol", "Arigato"];
+        //const cadenaFinal = ConcatenarElementosArray(Array2);
+        //console.log(cadenaFinal);
+
+        function crearPiramideInvertida(filas) {
+            for (let i = filas; i >= 1; i--) {
+                let linea = "";
+                for (let j = 1; j <= i; j++) {
+                    linea += "*";
+                }
+                console.log(linea);
+            }
+        }
+        crearPiramideInvertida(10);
+
+
+
+
+        //const ArrayNumeros = [5, 12, 8, 15, 3, 22, 7, 19];
+        //const resultado = calcularPromedio(ArrayNumeros);
+        //console.log("El promedio es:", resultado);
+        //PosicionesArray();
+        // Crear una pirámide de 5 filas
+        //crearPiramide(11);
+        //ConvertirAMayuscula();
+        //CalculoFibonacci();
+        //ImprimePalabra();
+        //calcularEdad(15);
+        //calcularEdad(20);
+        //Tabla5();
+        //calcularCuadradoNumero(10);
+        //doble(100);
+        // Imprimeasteriscos();
+        //ImprimeArray();
+        //ImprimeSumaArray();
+        //MayorEnArray();
+        //ContadorMayor10();
+        //DivisibleX3();
+        //ArrayDeKbeza();
+    </script>
+</body>
+
+</html>
